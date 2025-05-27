@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from testing.gamkers.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 May 2025 07:22:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMAIN COMPROMISED</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&amp;family=Courier+Prime:wght@400;700&amp;display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: linear-gradient(45deg, #0a0a0a, #1a0a1a, #0a1a0a);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            font-family: 'Orbitron', monospace;
+            color: #00ff41;
+            overflow-x: hidden;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        
+        .matrix-column {
+            position: absolute;
+            top: -100px;
+            font-family: 'Courier Prime', monospace;
+            font-size: 14px;
+            color: #00ff41;
+            animation: matrixRain linear infinite;
+        }
+        
+        @keyframes matrixRain {
+            0% { transform: translateY(-100px); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+        
+        .container {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .skull {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: pulse 2s ease-in-out infinite alternate;
+            color: #ff0040;
+            text-shadow: 0 0 20px #ff0040, 0 0 40px #ff0040;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #ff0040;
+            text-shadow: 0 0 10px #ff0040, 0 0 20px #ff0040, 0 0 30px #ff0040;
+            animation: flicker 3s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+            75% { opacity: 0.9; }
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #00ff41;
+            text-shadow: 0 0 10px #00ff41;
+            animation: typewriter 4s steps(40) 1s both;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #00ff41;
+        }
+        
+        @keyframes typewriter {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+        
+        .hacker-info {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff41;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            max-width: 600px;
+            box-shadow: 0 0 30px rgba(0, 255, 65, 0.3);
+            animation: borderGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes borderGlow {
+            0% { box-shadow: 0 0 30px rgba(0, 255, 65, 0.3); }
+            100% { box-shadow: 0 0 50px rgba(0, 255, 65, 0.6); }
+        }
+        
+        .terminal-text {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #00ff41;
+            text-align: left;
+        }
+        
+        .command-line {
+            margin: 10px 0;
+            animation: fadeInUp 0.5s ease forwards;
+            opacity: 0;
+        }
+        
+        .command-line:nth-child(1) { animation-delay: 2s; }
+        .command-line:nth-child(2) { animation-delay: 2.5s; }
+        .command-line:nth-child(3) { animation-delay: 3s; }
+        .command-line:nth-child(4) { animation-delay: 3.5s; }
+        .command-line:nth-child(5) { animation-delay: 4s; }
+        
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        .warning {
+            background: rgba(255, 0, 64, 0.1);
+            border: 2px solid #ff0040;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            max-width: 500px;
+            animation: warningPulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes warningPulse {
+            0%, 100% { background: rgba(255, 0, 64, 0.1); }
+            50% { background: rgba(255, 0, 64, 0.3); }
+        }
+        
+        .warning-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ff0040;
+            text-shadow: 0 0 10px #ff0040;
+        }
+        
+        .gamker-signature {
+            margin-top: 30px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00ffff;
+            text-shadow: 0 0 15px #00ffff;
+            animation: signatureGlow 3s ease-in-out infinite;
+        }
+        
+        @keyframes signatureGlow {
+            0%, 100% { transform: scale(1); color: #00ffff; }
+            50% { transform: scale(1.05); color: #ff00ff; }
+        }
+        
+        .scan-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff41, transparent);
+            animation: scanLine 3s linear infinite;
+            top: 0;
+        }
+        
+        @keyframes scanLine {
+            0% { top: 0%; }
+            100% { top: 100%; }
+        }
+        
+        @media (max-width: 768px) {
+            .main-title { font-size: 2.5rem; }
+            .subtitle { font-size: 1.2rem; }
+            .hacker-info { padding: 20px; margin: 10px; }
+            .terminal-text { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-bg" id="matrixBg"></div>
+    <div class="scan-line"></div>
+    
+    <div class="container">
+        <div class="skull">💀</div>
+        <h1 class="main-title">SYSTEM COMPROMISED</h1>
+        <div class="subtitle">Domain infiltrated by GAMKERS GROUP...</div>
+        
+        <div class="hacker-info">
+            <div class="terminal-text">
+                <div class="command-line">root@compromised:~# ACCESS GRANTED</div>
+                <div class="command-line">root@compromised:~# Firewall bypassed...</div>
+                <div class="command-line">root@compromised:~# Database accessed...</div>
+                <div class="command-line">root@compromised:~# System files modified...</div>
+                <div class="command-line">root@compromised:~# Mission complete.</div>
+            </div>
+        </div>
+        
+        <div class="warning">
+            <div class="warning-text">
+                ⚠️ SECURITY BREACH DETECTED ⚠️<br>
+                This domain has been compromised by advanced persistent threat actors
+            </div>
+        </div>
+        
+        <div class="gamker-signature">
+            - GAMKERS COLLECTIVE -<br>
+            <span style="font-size: 0.8em; color: #666;">We are everywhere. We are nowhere.</span>
+        </div>
+    </div>
+    
+    <script>
+        // Matrix rain effect
+        function createMatrix() {
+            const matrixBg = document.getElementById('matrixBg');
+            const chars = '01アカサタナハマヤラワガザダバパイキシチニヒミリギジヂビピウクスツヌフムユルグズヅブプエケセテネヘメレゲゼデベペオコソトノホモヨロゴゾドボポ';
+            
+            for (let i = 0; i < 15; i++) {
+                const column = document.createElement('div');
+                column.className = 'matrix-column';
+                column.style.left = Math.random() * 100 + '%';
+                column.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                column.style.animationDelay = Math.random() * 2 + 's';
+                
+                let text = '';
+                for (let j = 0; j < 20; j++) {
+                    text += chars[Math.floor(Math.random() * chars.length)] + '<br>';
+                }
+                column.innerHTML = text;
+                
+                matrixBg.appendChild(column);
+            }
+        }
+        
+        // Glitch effect for title
+        function glitchEffect() {
+            const title = document.querySelector('.main-title');
+            const originalText = 'SYSTEM COMPROMISED';
+            const glitchChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
+            
+            setInterval(() => {
+                if (Math.random() < 0.1) {
+                    let glitchedText = '';
+                    for (let char of originalText) {
+                        if (Math.random() < 0.1) {
+                            glitchedText += glitchChars[Math.floor(Math.random() * glitchChars.length)];
+                        } else {
+                            glitchedText += char;
+                        }
+                    }
+                    title.textContent = glitchedText;
+                    setTimeout(() => {
+                        title.textContent = originalText;
+                    }, 100);
+                }
+            }, 200);
+        }
+        
+        // Initialize effects
+        document.addEventListener('DOMContentLoaded', () => {
+            createMatrix();
+            glitchEffect();
+            
+            // Add random flicker to background
+            setInterval(() => {
+                if (Math.random() < 0.05) {
+                    document.body.style.filter = 'invert(1) hue-rotate(180deg)';
+                    setTimeout(() => {
+                        document.body.style.filter = 'none';
+                    }, 50);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+<!-- Mirrored from testing.gamkers.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 May 2025 07:22:23 GMT -->
+</html>
